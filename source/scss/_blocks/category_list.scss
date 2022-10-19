@@ -1,0 +1,125 @@
+.category {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+    padding-top: 90px;
+  }
+  
+  .category__menu {
+    padding-top: 30px;
+  }
+  
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+.category__menu_item {
+    list-style-type: none;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    background: #D5D4E1;
+    background-clip: content-box;
+}
+
+.link_kids {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 32px;
+    position: absolute;
+    padding-top: 57px;
+    color: #FFFFFF;
+    padding-left: 75px;
+    padding-bottom: 56px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+    word-wrap: break-word;
+    width: 129px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.link_holiday{
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    padding-left: 62px;
+    word-wrap: break-word;
+    width: 155px;
+    color: #FFFFFF;
+}
+
+.img_toys {
+    background: #F8F2DA;
+}
+
+
+.link_toys {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    padding-left: 99px;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.img_accessories {
+    background: #D5D4E1;
+}
+
+.link_accessories {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;;
+    position: absolute;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    padding-left: 44px;
+}

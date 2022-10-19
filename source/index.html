@@ -21,20 +21,149 @@
     <link href="css/style.min.css" rel="stylesheet">
     <!-- endbuild -->
   </head>
-  <body>
-    <div class="wrapper">
-      <main class="content">
-        <div class="coming-soon">
-          <h1 class="coming-soon__title">
-            <span>A</span>
-            <span>T</span>
-            <span>X</span>
-          </h1>
+<body>
+    @@include('blocks/header.html')
+<main>
+    <section class="container">
+        <div class="slider">
+            <div class="slider__menu">
+                <span class="slider__menu_item">01</span>
+                <ul class="slider__switch">
+                    <li class="slider__list_item"><button class="slider__switch_item" type="button"></button></li>
+                    <li class="slider__list_item"><button class="slider__switch_item1" type="button"></button></li>
+                    <li class="slider__list_item"><button class="slider__switch_item1" type="button"></button></li>
+                    <li class="slider__list_item"><button class="slider__switch_item1" type="button"></button></li>
+                </ul>
+            </div>
+            <div class="slide__text">
+                <h1 class="slide__text_name">THE OOH NOO COLLECTION</h1>
+                <p class="slide__text_paragraph">Designed in Slovenia</p>
+                <button class="button button-js" type="button">EXPLORE NOW</button>
+            </div>
+                <img class="image__monster" src="./img/imagemonster.png" alt="image">
         </div>
-      </main>
-      @@include('blocks/footer.html')
-    </div>
+        <p class="paragraph__item">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+    </section>
 
-    <script src="js/app.js" defer></script>
-  </body>
+<div class="container">
+        <h2 class="category">Category Products</h2>
+    <div class="category__menu">
+        <ul class="menu__list">
+            @@include('blocks/category_list.html', {
+                    "link": "#",
+                    "class": "",
+                    "text": "Apparel kids",
+                    "img": "./img/Rectangle.jpg"
+                })
+            @@include('blocks/category_list.html', {
+                    "link": "#",
+                    "class": "",
+                    "text": "Holiday shop",
+                    "img": "./img/imagesock.jpg"
+                })
+            @@include('blocks/category_list.html', {
+                    "link": "#",
+                    "class": "",
+                    "text": "TOYS",
+                    "img": "./img/imagedeer.png"
+                })
+            @@include('blocks/category_list.html', {
+                    "link": "#",
+                    "class": "",
+                    "text": "ACCESSORIES",
+                    "img": "./img/imagemonkey.png"
+                })
+        </ul>
+    </div>
+        <div class="wrap">
+            <button class="vector_left"><img src="./pic/icons/Vectorleft.svg" alt="Vectorleft"></button>
+            <button class="vector_right"><img src="./pic/icons/Vectorright.svg" alt="Vectorright"></button>
+            <p class="wrap__paragraph">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+        </div>
+    </div>
+    <section class="container">
+        <div class="info">
+            <div>
+                <img src="./img/imagewomen.jpg" alt="image">
+            </div>
+            <div class="info__block">
+                <h2 class="block__name">Delivery</h2>
+                <ul class="block__list">
+                    <li class="block__list_delivery">Delivery</li>
+                    <li class="block__list_guarantee">Guarantee</li>
+                    <li class="block__list_credit">Credit</li>
+                </ul>
+                <p class="info__paragraph_one">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <p class="info__paragraph_two">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                <button class="button">LEARN MORE</button>
+            </div>
+        </div>  
+    </section>
+    <section class="container">
+        <h2 class="name__section">company brand</h2>
+        <ul class="adv__list">
+            <li class="adv__list_item">
+                <img src="./pic/icons/mail.svg" alt="logo">
+            </li>
+            <li class="adv__list_item">
+                <img src="./pic/icons/apple.svg" alt="logo">
+            </li>
+            <li class="adv__list_item">
+                <img src="./pic/icons/eltex.svg" alt="logo">
+            </li>
+            <li class="adv__list_item">
+                <img src="./pic/icons/owox.svg" alt="logo">
+            </li>
+        </ul>
+    </section>
+    <section class="container">
+        <div class="block">
+            <div class="block__buy">
+                <h2 class="block__name_item">Design Life Kids</h2>
+                <p class="block__name_paragraph">About Us</p>
+                <p class="block__name_outline">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by.</p>
+                <button class="button_item">buy now</button>
+            </div>
+            <div class="block__contacts">
+                <h2 class="block__name_item">Contacts</h2>
+                <p class="block__name_outline1">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <img class="maps" src="./img/imagemap.png" alt="maps">
+            </div>
+        </div>
+    </section>
+@@include('blocks/footer.html')
+</main>
+<div class="popup">
+        <div class="popup__body">
+            <button class="popup__close close-js"></button>
+            <form class="form__area" action="#">
+                <div class="name__area">
+                    <label class="name__item" for="input-name">Name</label>
+                    <input class="name__input" type="text" name="input-name" id="input-name" value="Ivan Ivanov">
+                </div>
+                <div class="contact__details">
+                    <div class="phone__area">
+                        <label class="name__item_contact" for="input-phone">Phone</label>
+                        <input class="phone__input" type="text" name="input-phone" id="input-phone">
+                    </div>
+                    <div class="email__area">
+                        <label class="name__item_contact" for="input-email">Email</label>
+                        <input class="email__input" type="text" name="input-email" id="input-email">
+                    </div>
+                </div>
+                <div class="message__area">
+                    <label class="name__item" for="textarea">Message</label>
+                    <textarea class="message__block" name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                </div>
+                <div class="deal">
+                    <input class="check__deal" type="checkbox" name="checkbox" id="checkbox">
+                    <span class="custom__checkbox_deal"></span>
+                    <label class="deal__info" for="checkbox">By clicking on the button, you consent to the processing of your personal data</label>
+                    <button class="button__deal" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>  
+</div>
+<script src="js/index.js"></script>
+</body>
 </html>
