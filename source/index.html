@@ -19,6 +19,7 @@
 
     <!-- build:css -->
     <link href="css/style.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@100;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <!-- endbuild -->
   </head>
 <body>
@@ -38,7 +39,10 @@
             <div class="slide__text">
                 <h1 class="slide__text_name">THE OOH NOO COLLECTION</h1>
                 <p class="slide__text_paragraph">Designed in Slovenia</p>
-                <button class="button button-js" type="button">EXPLORE NOW</button>
+                @@include('blocks/button.html', {
+                    "text": "Explore Now",
+                    "class":"button"
+                })
             </div>
                 <img class="image__monster" src="./img/imagemonster.png" alt="image">
         </div>
@@ -51,27 +55,27 @@
         <ul class="menu__list">
             @@include('blocks/category_list.html', {
                     "link": "#",
-                    "class": "",
+                    "class": "category__link",
                     "text": "Apparel kids",
                     "img": "./img/Rectangle.jpg"
                 })
             @@include('blocks/category_list.html', {
                     "link": "#",
-                    "class": "",
+                    "class": "category__link",
                     "text": "Holiday shop",
                     "img": "./img/imagesock.jpg"
                 })
             @@include('blocks/category_list.html', {
                     "link": "#",
-                    "class": "",
+                    "class": "category__link",
                     "text": "TOYS",
-                    "img": "./img/imagedeer.png"
+                    "img": "./img/imagedeer.jpg"
                 })
             @@include('blocks/category_list.html', {
                     "link": "#",
-                    "class": "",
+                    "class": "category__link",
                     "text": "ACCESSORIES",
-                    "img": "./img/imagemonkey.png"
+                    "img": "./img/Group152.jpg"
                 })
         </ul>
     </div>
@@ -95,7 +99,10 @@
                 </ul>
                 <p class="info__paragraph_one">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
                 <p class="info__paragraph_two">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
-                <button class="button">LEARN MORE</button>
+                @@include('blocks/button.html', {
+                    "text": "LEARN MORE",
+                    "class":"button"
+                })
             </div>
         </div>  
     </section>
@@ -103,16 +110,16 @@
         <h2 class="name__section">company brand</h2>
         <ul class="adv__list">
             <li class="adv__list_item">
-                <img src="./pic/icons/mail.svg" alt="logo">
+                <img src="./img/icons/mail.svg" alt="logo">
             </li>
             <li class="adv__list_item">
-                <img src="./pic/icons/apple.svg" alt="logo">
+                <img src="./img/icons/apple.svg" alt="logo">
             </li>
             <li class="adv__list_item">
-                <img src="./pic/icons/eltex.svg" alt="logo">
+                <img src="./img/icons/eltex.svg" alt="logo">
             </li>
             <li class="adv__list_item">
-                <img src="./pic/icons/owox.svg" alt="logo">
+                <img src="./img/icons/owox.svg" alt="logo">
             </li>
         </ul>
     </section>
@@ -122,7 +129,10 @@
                 <h2 class="block__name_item">Design Life Kids</h2>
                 <p class="block__name_paragraph">About Us</p>
                 <p class="block__name_outline">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by.</p>
-                <button class="button_item">buy now</button>
+                @@include('blocks/button.html', {
+                    "text": "Buy now",
+                    "class":"button_item"
+                })
             </div>
             <div class="block__contacts">
                 <h2 class="block__name_item">Contacts</h2>

@@ -29,110 +29,18 @@ body {
   padding: 0px;
 }
 
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
 .container {
   max-width: 1180px;
   margin: 0 auto;
 }
 
-.header {
-  margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-bottom: 90px;
-}
 
-.header__wraper {
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
-}
 
-.nav {
- padding-left: 60px;
- display: -webkit-box;
- display: -ms-flexbox;
- display: flex;
- -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
- -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 20px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.nav__list_item {
-  text-decoration: none;
-  list-style-type: none;
-  padding-left: 20px;
-  font-size: 14px;
-  line-height: 19px;
-  font-family: 'Open Sans';
-}
-
-.nav__list_link {
-  text-decoration: none;
-  list-style-type: none;
-  color: #1E0606;
-  font-family: 'Open Sans';
-}
-
-.button_search {
-  padding-left: 678px;
-  padding-right: 23px;
-}
-
-.contact__us {
-  font-size: 14px;
-  line-height: 19px;
-  text-decoration: none;
-  list-style-type: none;
-  font-family: 'Open Sans';
-  /* font-style: normal; */
-  font-weight: 700;
-  color: #1E0606;
-
-}
-
-.button {
-  padding-top: 20px;
-  padding-bottom: 90px;
-  margin-bottom: 128px;
-  margin-top: 20px;
-  font-size: 16px;
-  line-height: 22px; 
-  font-weight: 700; 
-  background: #000000;
-  color: white;
-  padding: 9px 22px;
-  font-family: 'Open Sans';
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-  }
-
-  .button:active {
-      background: #6a6969;
-  }
 
   
 

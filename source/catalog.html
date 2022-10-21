@@ -1,17 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/catalog.css">
-    <link rel="stylesheet" href="../style/normalize.css">
-    <link rel="stylesheet" href="../style/common.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@100;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <title>Catalog</title>
-</head>
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>DL Academy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
 <body>
    @@include('blocks/header.html')
     <main>
@@ -33,30 +42,42 @@
                 </div>
             <div class="category__menu_catalog">
                     <ul class="menu__list_catalog">
-                        <li class="category__menu_item category__catalog">
-                            <img class="img_kids" width="280" height="270" src="../pic/images/Rectangle.jpg" alt="image">
-                            <a class="link_kids" href="#">APPAREL KIDS</a>
-                        </li>
-                        <li class="category__menu_item category__catalog">
-                            <img class="img_holiday" width="280" height="270" src="../pic/images/imagesock.jpg" alt="image">
-                            <a class="link_holiday" href="#">HOLIDAY SHOP</a>
-                        </li>
-                        <li class="category__menu_item category__catalog">
-                            <img class="img_toys" width="280" height="270" src="../pic/images/imagedeer.png" alt="image">
-                            <a class="link_toys" href="../pages/toys.html">TOYS</a>
-                        </li>
-                        <li class="category__menu_item category__catalog">
-                            <img class="img__accessories_catalog" width="280" height="270" src="../pic/images/imagemonkey.png" alt="image">
-                            <a class="link_accessories" href="#">ACCESSORIES</a>
-                        </li>
-                        <li class="category__menu_item category__catalog">
-                            <img class="img_sale" width="280" height="270" src="../pic/images/imageflamingo.jpg" alt="flamingo">
-                            <a class="link_sale" href="#">SALE</a>
-                        </li>
-                        <li class="category__menu_item category__catalog">
-                            <img class="img_adults" width="280" height="270" src="../pic/images/imagedress.jpg" alt="dress">
-                            <a class="link_adults" href="#">APPAREL ADULTS</a>
-                        </li>
+                        @@include('blocks/category_list.html', {
+                            "link": "#",
+                            "class": "category__link",
+                            "text": "Apparel kids",
+                            "img": "./img/Rectangle.jpg"
+                        })
+                    @@include('blocks/category_list.html', {
+                            "link": "#",
+                            "class": "category__link",
+                            "text": "Holiday shop",
+                            "img": "./img/imagesock.jpg"
+                        })
+                    @@include('blocks/category_list.html', {
+                            "link": "#",
+                            "class": "category__link",
+                            "text": "TOYS",
+                            "img": "./img/imagedeer.jpg"
+                        })
+                    @@include('blocks/category_list.html', {
+                            "link": "#",
+                            "class": "category__link",
+                            "text": "ACCESSORIES",
+                            "img": "./img/Group152.jpg"
+                        })
+                        @@include('blocks/category_list.html', {
+                            "link": "#",
+                            "class": "category__link",
+                            "text": "Sale",
+                            "img": "./img/imageflamingo.jpg"
+                        })
+                        @@include('blocks/category_list.html', {
+                            "link": "#",
+                            "class": "category__link",
+                            "text": "APPAREL ADULTS",
+                            "img": "./img/imagedress.jpg"
+                        })
                     </ul>
             </div>
             <div class="product">

@@ -42,84 +42,45 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    justify-content: center;
     position: relative;
     background: #D5D4E1;
     background-clip: content-box;
 }
 
-.link_kids {
-    list-style-type: none;
-    text-decoration: none;
+
+.category__link {
     font-size: 26px;
     line-height: 32px;
     position: absolute;
-    padding-top: 57px;
     color: #FFFFFF;
-    padding-left: 75px;
-    padding-bottom: 56px;
     font-family: 'Montserrat';
     font-weight: 700;
     font-style: normal;
     text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
-    word-wrap: break-word;
-    width: 129px;
+    max-width: 170px;
     text-align: center;
     text-transform: uppercase;
 }
 
-.link_holiday{
-    list-style-type: none;
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 32px;
-    text-align: center;
-    text-transform: uppercase;
-    position: absolute;
-    padding-left: 62px;
-    word-wrap: break-word;
-    width: 155px;
-    color: #FFFFFF;
+.category__catalog:nth-child(4) {
+  padding-bottom: 23px;
+  padding-left: 210px;
+  padding-top: 23px;
 }
 
-.img_toys {
-    background: #F8F2DA;
+.menu__list_catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-
-.link_toys {
-    list-style-type: none;
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 32px;
-    position: absolute;
-    text-align: center;
-    text-transform: uppercase;
-    padding-left: 99px;
-    color: #FFFFFF;
-    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
-}
-
-.img_accessories {
-    background: #D5D4E1;
-}
-
-.link_accessories {
-    list-style-type: none;
-    text-decoration: none;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 32px;;
-    position: absolute;
-    color: #FFFFFF;
-    text-align: center;
-    text-transform: uppercase;
-    padding-left: 44px;
+.category__catalog {
+  background: #D5D4E1;
+  background-clip: content-box;
 }
