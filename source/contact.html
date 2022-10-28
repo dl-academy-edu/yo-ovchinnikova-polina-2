@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@100;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="google" content="notranslate">
@@ -29,15 +30,24 @@
                 <h1 class="category_name">Contact us</h1>
                 <div class="breadcrumb">
                     <ul class="breadcrumb__list">
-                        <li class="breadcrumb__list_item">
-                            <a class="breadcrumb__link_home" href="#">Home</a>
-                        </li>
-                        <li class="breadcrumb__list_item">
-                            <img class="breadcrumb_vector" src="../pic/icons/VectorStroke.svg" alt="vector">
-                        </li>
-                        <li class="breadcrumb__list_item">
-                            <a class="breadcrumb__link_contact" href="#">Contact Us</a>
-                        </li>
+                        @@include('blocks/breadcrumbs.html', {
+                            "link": "#",
+                            "class": "breadcrumb__link_home",
+                            "text": "Home",
+                            "img": ""
+                        })
+                        @@include('blocks/breadcrumbs.html', {
+                            "link": "#",
+                            "class": "breadcrumb_vector",
+                            "text": "",
+                            "img": "./img/icons/VectorStroke.svg"
+                        })
+                        @@include('blocks/breadcrumbs.html', {
+                            "link": "#",
+                            "class": "breadcrumb__link_catalog",
+                            "text": "Contact Us",
+                            "img": ""
+                        })
                     </ul>
                 </div>
             </div>
@@ -69,7 +79,10 @@
                             <input class="check__deal" type="checkbox" name="checkbox" id="checkbox">
                             <span class="custom__checkbox_deal"></span>
                             <label class="deal__info" for="checkbox">By clicking on the button, you consent to the processing of your personal data</label>
-                            <button class="button__deal" type="submit">Submit</button>
+                            @@include('blocks/button.html', {
+                                "text": "Submit",
+                                "class":"button_item"
+                            })
                         </div>
                     </form>
                 </div>               

@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@100;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="google" content="notranslate">
@@ -29,15 +30,24 @@
             <h1 class="category_name">Category Products</h1>
                 <div class="breadcrumb">
                     <ul class="breadcrumb__list">
-                        <li class="breadcrumb__list_item">
-                            <a class="breadcrumb__link_home" href="#">Home</a>
-                        </li>
-                        <li class="breadcrumb__list_item">
-                            <img class="breadcrumb_vector" src="../pic/icons/VectorStroke.svg" alt="vector">
-                        </li>
-                        <li class="breadcrumb__list_item">
-                            <a class="breadcrumb__link_catalog" href="#">Catalog</a>
-                        </li>
+                        @@include('blocks/breadcrumbs.html', {
+                            "link": "#",
+                            "class": "breadcrumb__link_home",
+                            "text": "Home",
+                            "img": ""
+                        })
+                        @@include('blocks/breadcrumbs.html', {
+                            "link": "#",
+                            "class": "breadcrumb_vector",
+                            "text": "",
+                            "img": "./img/icons/VectorStroke.svg"
+                        })
+                        @@include('blocks/breadcrumbs.html', {
+                            "link": "#",
+                            "class": "breadcrumb__link_catalog",
+                            "text": "Catalog",
+                            "img": ""
+                        })
                     </ul>
                 </div>
             <div class="category__menu_catalog">
@@ -55,7 +65,7 @@
                             "img": "./img/imagesock.jpg"
                         })
                     @@include('blocks/category_list.html', {
-                            "link": "#",
+                            "link": "/toys.html",
                             "class": "category__link",
                             "text": "TOYS",
                             "img": "./img/imagedeer.jpg"
@@ -82,9 +92,9 @@
             </div>
             <div class="product">
                 <h2 class="product__name">Product Description</h2>
-                <p class="product__paragraph_one">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
-                <p class="product__paragraph_two">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
-                <p class="product__paragraph_three">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+                <p class="product__paragraph">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+                <p class="product__paragraph">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+                <p class="product__paragraph">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
             </div>
         </div>
     </section>

@@ -10,69 +10,62 @@
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 90px;
-  }
-  
-  .header__wraper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  }
-  
-  .nav {
-   padding-left: 60px;
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-   -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  
-  .nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-left: 20px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-  
-  .nav__list_item {
-    text-decoration: none;
-    list-style-type: none;
-    padding-left: 20px;
-    font-size: 14px;
-    line-height: 19px;
-    font-family: 'Open Sans';
-  }
-  
-  .nav__list_link {
-    text-decoration: none;
-    list-style-type: none;
-    color: #1E0606;
-    font-family: 'Open Sans';
+    &__wraper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      }
+    &__nav {
+      padding-left: 60px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+       -ms-flex-pack: center;
+       justify-content: center;
+      -webkit-box-align: center;
+       -ms-flex-align: center;
+       align-items: center;
+     }
+    &__nav-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-left: 20px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+    &__nav-item {
+      // @include font($font-weight 400);
+      text-decoration: none;
+      list-style-type: none;
+      padding-left: 20px;
+      font-family: 'Open Sans';
+    }
+    &__nav-link {
+      // @include font($font-weight 400);
+      text-decoration: none;
+      list-style-type: none;
+      color: #1E0606;
+      font-family: 'Open Sans';
+      text-transform: uppercase;
+    }
   }
   
   .button_search {
-    padding-left: 678px;
+    padding-left: 619px;
     padding-right: 23px;
   }
   
   .contact__us {
-    font-size: 14px;
-    line-height: 19px;
+    @include font;
     text-decoration: none;
     list-style-type: none;
     font-family: 'Open Sans';
-    /* font-style: normal; */
-    font-weight: 700;
     color: #1E0606;
-  
+    text-transform: uppercase;
   }

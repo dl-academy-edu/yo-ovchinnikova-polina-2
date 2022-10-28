@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@100;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>DL Academy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  @@include('blocks/header.html')
+<body>
+    <section class="container">
+      <div class="toys">
+          <h1 class="category_name">Toy for kids</h1>
+          <div class="breadcrumb">
+              <ul class="breadcrumb__list">
+                @@include('blocks/breadcrumbs.html', {
+                    "link": "#",
+                    "class": "breadcrumb__link_home",
+                    "text": "Home",
+                    "img": ""
+                })
+                @@include('blocks/breadcrumbs.html', {
+                    "link": "#",
+                    "class": "breadcrumb_vector",
+                    "text": "",
+                    "img": "./img/icons/VectorStroke.svg"
+                })
+                @@include('blocks/breadcrumbs.html', {
+                    "link": "#",
+                    "class": "breadcrumb__link_home",
+                    "text": "Catalog",
+                    "img": ""
+                })
+                @@include('blocks/breadcrumbs.html', {
+                    "link": "#",
+                    "class": "breadcrumb_vector",
+                    "text": "",
+                    "img": "./img/icons/VectorStroke.svg"
+                })
+                @@include('blocks/breadcrumbs.html', {
+                    "link": "#",
+                    "class": "breadcrumb__link_catalog",
+                    "text": "Toys",
+                    "img": ""
+                })
+              </ul>
+          </div>
+      </div>
+    </section>
+    <section class="container">
+      <h2 class="name__section">product filter</h2>
+      <div class="">
+          <div class="filter__menu">
+              <form class="filter__form" action="#">
+              <fieldset class="cost">
+                  <legend class="legend__name">Cost</legend>
+                  <img class="img__cost" src="../pic/images/Group2.png" alt="cost">
+              </fieldset>
+              <fieldset class="color__filter">
+                  <legend class="legend__name">Color</legend>
+                  <ul class="color__check_list">
+                      <li class="color__check_item">
+                          <input class="color__check" type="checkbox" name="input-black" id="input-black">
+                          <span class="custom__checkbox"></span>
+                          <label class="label__color" for="input-black">Black</label>
+                      </li>
+                      <li class="color__check_item">
+                          <input class="color__check" type="checkbox" name="input-blue" id="input-blue">
+                          <span class="custom__checkbox"></span>
+                          <label class="label__color" for="input-blue">Blue</label>
+                      </li>
+                      <li class="color__check_item">
+                          <input class="color__check" type="checkbox" name="input-green" id="input-green">
+                          <span class="custom__checkbox"></span>
+                          <label class="label__color" for="input-green">Green</label>
+                      </li>
+                      <li class="color__check_item">
+                          <input class="color__check" type="checkbox" name="input-white" id="input-white">
+                          <span class="custom__checkbox"></span>
+                          <label class="label__color" for="input-white">White</label>
+                      </li>
+                  </ul>
+              </fieldset>
+          <fieldset class="delivery__filter">
+              <legend class="legend__name">Delivery</legend>
+              <ul class="delivery__chek_list">
+                  <li class="delivery__chek_item">
+                      <input class="delivery__real_check" type="radio" name="delivery" id="input-free">
+                      <span class="delivery__custom_check" id="input-free"></span>
+                      <label class="delivery__item" for="input-free">Free shipping</label>
+                  </li>
+                  <li class="delivery__chek_item">
+                      <input class="delivery__real_check" type="radio" name="delivery" id="input-fast">
+                      <span class="delivery__custom_check"></span>
+                      <label class="delivery__item" for="input-fast">Fast shipping</label>
+                  </li>
+              </ul>
+          </fieldset>
+          <fieldset class="amount__filter">
+              <legend class="legend__name">Amount</legend>
+              <ul class="amount__check_list">
+                  <li class="amount__check_item">
+                      <input class="amount__input" checked type="radio" name="age" id="input-age">
+                      <label class="amount__item" for="input-age">0-5</label>
+                  </li>
+                  <li class="amount__check_item">
+                      <input class="amount__input" type="radio" name="age" id="input-age1">
+                      <label class="amount__item" for="input-age1">10-20</label>
+                  </li>
+                  <li class="amount__check_item">
+                      <input class="amount__input" type="radio" name="age" id="input-age2">
+                      <label class="amount__item" for="input-age2">20-50</label>
+                  </li>
+              </ul>
+          </fieldset>
+          @@include('blocks/button.html', {
+            "text": "Apply",
+            "class":"button_item"
+        })
+          <!-- <button class="button_apply" type="button">Apply</button> -->
+      </form>
+      </div>
+      </div>  
+    </section>
+    <section class="container">
+      <h2 class="name__section">product list</h2>
+      <div class="produсe__menu">
+          <ul class="produce__menu_list">
+            @@include('blocks\category_list.html', {
+                "link": "#",
+                "class": "category__link",
+                "text": "",
+                "img": "./img/shark.png"
+                "desc":"SHARKY BEAN BAG CHAIR COVER"
+            })
+              <li class="produce__menu_item">
+                  <img class="img_produce" src="./img/shark.png" alt="shark_chair">
+                  <p class="produce__paragraph">SHARKY BEAN BAG CHAIR COVER</p>
+                  <p class="produce_price">$60.00 USD</p>
+              </li>
+              <li class="produce__menu_item">
+                  <img class="img_produce" src="./img/decor.png" alt="brass_deco">
+                  <p class="produce__paragraph">BRASS DECO FRAMES</p>
+                  <p class="produce_price">$66.00 USD</p>
+              </li>
+              <li class="produce__menu_item">
+                  <img class="img_produce" src="./img/apron.png" alt="apron">
+                  <p class="produce__paragraph">CIBO FULL APRON</p>
+                  <p class="produce_price">$60.00 USD</p>
+              </li>
+              <li class="produce__menu_item">
+                  <img class="img_produce" src="./img/gumball.png" alt="gumball">
+                  <p class="produce__paragraph">GATCHA GATCHA GUMBALL MACHINE</p>
+                  <p class="produce_price">$56.00 USD</p>
+              </li>
+              <li class="produce__menu_item">
+                  <img class="img_produce" src="./img/candle.png" alt="candle">
+                  <p class="produce__paragraph">CHRISTMAS ADVENT SCENTED CANDLE</p>
+                  <p class="produce_price">$29.00 USD</p>
+              </li>
+              <li class="produce__menu_item">
+                  <img class="img_produce" src="./img/tangle.png" alt="tangle">
+                  <p class="produce__paragraph">TANGLE SPINNING TEA LIGHT</p>
+                  <p class="produce_price">$56.00 USD</p>
+              </li>
+          </ul>
+      </div>
+    </section>
+    <section class="container">
+      <h2 class="name__section">pagination</h2>
+      <div class="pagination">
+          <nav class="pagination__nav" aria-label="pages">
+              <button class="vector__pag_left"><img src="../pic/icons/Vectorpagleft.svg" alt="Vectorleft"></button>
+              <ul class="pagination__list">
+                  <li class="pagination__list_item">
+                      <a class="page_number_one" href="#">1</a>
+                  </li>
+                  <li class="pagination__list_item">
+                      <a class="page_number" href="#">2</a>
+                  </li>
+                  <li class="pagination__list_item">
+                      <a class="page_number" href="#">3</a>
+                  </li>
+                  <li class="pagination__list_item">
+                      <a class="page_number" href="#">4</a>
+                  </li>
+              </ul>
+              <button class="vector__pag_right"><img src="../pic/icons/Vectorpagright.svg" alt="Vectorright"></button>
+          </nav>
+      </div>   
+    </section>
+    @@include('blocks/footer.html')
+</body>
+</html>

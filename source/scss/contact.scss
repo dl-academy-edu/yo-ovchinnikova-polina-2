@@ -31,39 +31,3 @@
   Не стал выносить в отдельный файл, но если бы блок coming-soon действительно был бы нужен,
   то он должен был бы быть в файле _blocks/coming-soon.scss
 */
-
-.breadcrumb__link_contact {
-    font-family: 'Crimson Text';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 26px;  
-    color: #1E0606;
-    opacity: 0.5;
-    text-decoration: none;
-    list-style-type: none;
-}
-
-.contact__paragraph {
-    padding-left: 120px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-    color: #1E0606;
-    padding-bottom: 20px;
-}
-
-.contact__paragraph_item {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 34px;
-    text-transform: uppercase;
-    color: #C29974;
-    padding-left: 120px;
-    word-wrap: break-word;
-    width: 380px;
-}
