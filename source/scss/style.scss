@@ -39,7 +39,9 @@
 @import"_blocks/toys";
 @import"_blocks/breadcrumbs";
 @import"_blocks/catalog";
-
+@import"_blocks/popup";
+@import"_blocks/animation";
+@import"_blocks/pagination";
 
 a:hover {
   text-decoration: none;
@@ -1222,42 +1224,117 @@ a:hover {
 }
 
 
-.produce__menu_list {
+.produce{
+  &__menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+    }
+  &__menu-item {
+    text-decoration: none;
+    list-style-type: none;
+  }
+  &__img {
+    padding-bottom: 30px;
+  }
+  &__paragraph {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    font-family: 'Open Sans';
+    color: #1E0606;
+    padding-bottom: 15px;
+  }
+  &__price {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #1E0606;
+    padding-bottom: 25px;
+  }
+}
+// .produce__menu-item {
+//   text-decoration: none;
+//   list-style-type: none;
+// }
+
+// .produce__img {
+//   padding-bottom: 30px;
+// }
+
+// .produce__paragraph {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 19px;
+//   text-align: center;
+//   font-family: 'Open Sans';
+//   color: #1E0606;
+//   padding-bottom: 15px;
+// }
+
+// .produce__price {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 16px;
+//   line-height: 22px;
+//   text-align: center;
+//   color: #1E0606;
+//   padding-bottom: 25px;
+// }
+
+
+
+// popup
+.popup {
+  display: none;
 }
 
-.produce__menu_item {
-  text-decoration: none;
-  list-style-type: none;
+.popup::before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1400px;
+  height: 768px;
+  background: rgba(125, 151, 218, 0.8)
 }
 
-.img_produce {
-  padding-bottom: 30px;
+
+.popup__body {
+  position: fixed;
+  width: 680px;
+  height: 542px;
+  background: #E5EAF8;
+  top: 50px;
+  left: 360px;
 }
 
-.produce__paragraph {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  text-align: center;
-  font-family: 'Open Sans';
-  color: #1E0606;
-  padding-bottom: 15px;
+.open {
+  display: block;
 }
 
-.produce_price {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  color: #1E0606;
-  padding-bottom: 25px;
+.popup__close {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  margin-left: 685px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  background-image: url(..//pic/icons/XMLID1429.svg);
 }
+
+
+// pagination

@@ -140,70 +140,62 @@
     </section>
     <section class="container">
       <h2 class="name__section">product list</h2>
-      <div class="produсe__menu">
-          <ul class="produce__menu_list">
+      <div class="produсe">
+          <ul class="produce__menu-list">
             @@include('blocks\category_list.html', {
                 "link": "#",
-                "class": "category__link",
+                "class": "produce",
                 "text": "",
-                "img": "./img/shark.png"
-                "desc":"SHARKY BEAN BAG CHAIR COVER"
+                "img": "./img/shark.png",
+                "desc":"SHARKY BEAN BAG CHAIR COVER",
+                "price":"$60.00 USD"
             })
-              <li class="produce__menu_item">
-                  <img class="img_produce" src="./img/shark.png" alt="shark_chair">
-                  <p class="produce__paragraph">SHARKY BEAN BAG CHAIR COVER</p>
-                  <p class="produce_price">$60.00 USD</p>
-              </li>
-              <li class="produce__menu_item">
-                  <img class="img_produce" src="./img/decor.png" alt="brass_deco">
-                  <p class="produce__paragraph">BRASS DECO FRAMES</p>
-                  <p class="produce_price">$66.00 USD</p>
-              </li>
-              <li class="produce__menu_item">
-                  <img class="img_produce" src="./img/apron.png" alt="apron">
-                  <p class="produce__paragraph">CIBO FULL APRON</p>
-                  <p class="produce_price">$60.00 USD</p>
-              </li>
-              <li class="produce__menu_item">
-                  <img class="img_produce" src="./img/gumball.png" alt="gumball">
-                  <p class="produce__paragraph">GATCHA GATCHA GUMBALL MACHINE</p>
-                  <p class="produce_price">$56.00 USD</p>
-              </li>
-              <li class="produce__menu_item">
-                  <img class="img_produce" src="./img/candle.png" alt="candle">
-                  <p class="produce__paragraph">CHRISTMAS ADVENT SCENTED CANDLE</p>
-                  <p class="produce_price">$29.00 USD</p>
-              </li>
-              <li class="produce__menu_item">
-                  <img class="img_produce" src="./img/tangle.png" alt="tangle">
-                  <p class="produce__paragraph">TANGLE SPINNING TEA LIGHT</p>
-                  <p class="produce_price">$56.00 USD</p>
-              </li>
+            @@include('blocks\category_list.html', {
+                "link": "#",
+                "class": "produce",
+                "text": "",
+                "img": "./img/decor.png",
+                "desc":"BRASS DECO FRAMES",
+                "price":"$66.00 USD"
+            })
+            @@include('blocks\category_list.html', {
+                "link": "#",
+                "class": "produce",
+                "text": "",
+                "img": "./img/apron.png",
+                "desc":"CIBO FULL APRON",
+                "price":"$60.00 USD"
+            })
+            @@include('blocks\category_list.html', {
+                "link": "#",
+                "class": "produce",
+                "text": "",
+                "img": "./img/gumball.png",
+                "desc":"GATCHA GATCHA GUMBALL MACHINE",
+                "price":"$56.00 USD"
+            })
+            @@include('blocks\category_list.html', {
+                "link": "#",
+                "class": "produce",
+                "text": "",
+                "img": "./img/candle.png",
+                "desc":"CHRISTMAS ADVENT SCENTED CANDLE",
+                "price":"$29.00 USD"
+            })
+            @@include('blocks\category_list.html', {
+                "link": "#",
+                "class": "produce",
+                "text": "",
+                "img": "./img/tangle.png",
+                "desc":"TANGLE SPINNING TEA LIGHT",
+                "price":"$56.00 USD"
+            })
           </ul>
       </div>
     </section>
     <section class="container">
       <h2 class="name__section">pagination</h2>
-      <div class="pagination">
-          <nav class="pagination__nav" aria-label="pages">
-              <button class="vector__pag_left"><img src="../pic/icons/Vectorpagleft.svg" alt="Vectorleft"></button>
-              <ul class="pagination__list">
-                  <li class="pagination__list_item">
-                      <a class="page_number_one" href="#">1</a>
-                  </li>
-                  <li class="pagination__list_item">
-                      <a class="page_number" href="#">2</a>
-                  </li>
-                  <li class="pagination__list_item">
-                      <a class="page_number" href="#">3</a>
-                  </li>
-                  <li class="pagination__list_item">
-                      <a class="page_number" href="#">4</a>
-                  </li>
-              </ul>
-              <button class="vector__pag_right"><img src="../pic/icons/Vectorpagright.svg" alt="Vectorright"></button>
-          </nav>
-      </div>   
+    @@include('blocks/pagination.html')  
     </section>
     @@include('blocks/footer.html')
 </body>

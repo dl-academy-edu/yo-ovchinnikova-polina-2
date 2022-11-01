@@ -1,0 +1,39 @@
+.popup {
+    display: none;
+}
+
+.popup::before {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1400px;
+    height: 768px;
+    background: rgba(125, 151, 218, 0.8)
+}
+
+
+.popup__body {
+    position: fixed;
+    width: 680px;
+    height: 542px;
+    background: #E5EAF8;
+    top: 50px;
+    left: 360px;
+}
+
+.open {
+    display: block;
+}
+
+.popup__close {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin-left: 685px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-image: url(..//pic/icons/XMLID1429.svg);
+}

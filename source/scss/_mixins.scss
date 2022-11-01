@@ -3,3 +3,9 @@
   line-height: $line-height;
   font-weight: $font-weight;
 }
+
+@mixin img($widht:280px, $height:270px){
+  width: $widht;
+  height: $height;
+}
+
