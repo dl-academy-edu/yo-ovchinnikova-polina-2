@@ -32,7 +32,7 @@
 }
 
 
-.category__menu_item {
+.category__menu-item {
     list-style-type: none;
     text-decoration: none;
     display: -webkit-box;
@@ -48,6 +48,23 @@
     background: #D5D4E1;
     background-clip: content-box;
 
+}
+
+.category__menu-background {
+  list-style-type: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  background: #D5D4E1;
+  background-clip: content-box;
 }
 
 
@@ -86,3 +103,5 @@
   background: #D5D4E1;
   background-clip: content-box;
 }
+
+

@@ -1,16 +1,11 @@
-
-var popupBtn = document.querySelector('.button-js')
-var popupClose = document.querySelector('.close-js')
-
-popupBtn.addEventListener('click', function() {
-    console.log('кнопка нажата')
-})
-
-popupBtn.addEventListener('click', function() {
-    popup.classList.add('open')
-    
-})
-
-popupClose.addEventListener('click', function() {
-    popup.classList.remove('open')
+const popup = document.querySelector('.popup') 
+const popupBtn = document.querySelector('.button-js') 
+const popupClose = document.querySelector('.close-js') 
+ 
+popupBtn.addEventListener('click', function() { 
+    popup.classList.add('open') 
+}) 
+ 
+popupClose.addEventListener('click', function() { 
+    popup.classList.remove('open') 
 })

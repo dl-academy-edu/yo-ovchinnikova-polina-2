@@ -393,43 +393,40 @@
 }
 
 
-.produce__menu_list {
+.produce{
+    &__menu-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-}
-
-.produce__menu_item {
-    text-decoration: none;
-    list-style-type: none;
-}
-
-.img_produce {
-    padding-bottom: 30px;
-}
-
-.produce__paragraph {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    font-family: 'Open Sans';
-    color: #1E0606;
-    padding-bottom: 15px;
-}
-
-.produce_price {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
-    color: #1E0606;
-    padding-bottom: 25px;
-}
-
+      }
+    &__menu-item {
+      text-decoration: none;
+      list-style-type: none;
+    }
+    &__img {
+      padding-bottom: 30px;
+    }
+    &__paragraph {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+      font-family: 'Open Sans';
+      color: #1E0606;
+      padding-bottom: 15px;
+    }
+    &__price {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      color: #1E0606;
+      padding-bottom: 25px;
+    }
+  }
