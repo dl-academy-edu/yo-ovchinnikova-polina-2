@@ -15,22 +15,216 @@
 // }
 // }
 
+.animation{
+    // position: relative;
+}
+
+.city{
+    position: absolute;
+    margin-top: 10px;
+}
+
+.lanterns{
+position: absolute;
+width: 151px;
+height: 395px;
+margin-top: -580px;
+margin-left: 480px;
+// padding-bottom: 200px;
+}
+
+.lanterns1{
+    position: absolute;
+width: 151px;
+height: 395px;
+margin-top: -580px;
+margin-left: 1190px;
+}
+
+
+
 .taxi{
     animation-iteration-count: infinite;
     animation-name: taxi;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-timing-function: linear;
-    position: relative;
+    position: absolute;
+    width: 700px;
+    height: 200px;
+    margin-top: -300px;
 }
 
 @keyframes taxi{
     0%{
-        right: 0px;
+        transform: translateX(1500px);
     }
     50%{
-        right: 500px;
+        background-image: url(../../img/icons/taxsay.svg);
+        position: absolute;
+        background-repeat: no-repeat;
+        margin-left: 300px;
     }
     100%{
-        left: 1000px;
+        transform: translateX(-1000px);
     }
+}
+.taxi__say{
+
+}
+
+.road{
+    position: absolute;
+    width: 1543px;
+    height: 98px;
+    
+}
+.road1{
+    position: absolute;
+    margin-top: 190px;
+    width: 1543px;
+    height: 98px;
+}
+.carone{
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-name: carone;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    margin-top: -5px;
+    margin-top: -300px;
+    width: 170px;
+    height: 70px;
+}
+@keyframes carone{
+    0%{
+        transform: translateX(-900px);
+    }
+    // 50%{
+        // right: 500px;
+    // }
+    100%{
+        transform: translateX(2000px);
+    }
+}
+
+.cartwo{
+    position: absolute;
+    width: 160px;
+    height: 63px;
+    animation-iteration-count: infinite;
+    animation-name: cartwo;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    margin-top: -300px;
+}
+
+@keyframes cartwo{
+    0%{
+        transform: translateX(-900px);
+    }
+    // 50%{
+        // right: 500px;
+    // }
+    100%{
+        transform: translateX(2000px);
+    }
+}
+
+.carthree{
+    position: absolute;
+    width: 150px;
+    height: 75px;
+    margin-left: 500px;
+    animation-iteration-count: infinite;
+    animation-name: carthree;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    margin-top: -305px;
+}
+
+@keyframes carthree{
+    0%{
+        transform: translateX(-900px);
+    }
+    // 50%{
+        // right: 500px;
+    // }
+    100%{
+        transform: translateX(2000px);
+    }
+}
+
+.carfour{
+    position: absolute;
+    width: 90px;
+    height: 55px;
+    margin-left: 500px;
+    animation-iteration-count: infinite;
+    animation-name: carfour;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    margin-top: -310px;
+
+}
+
+@keyframes carfour{
+    0%{
+        transform: translateX(-900px);
+    }
+    // 50%{
+        // right: 500px;
+    // }
+    100%{
+        transform: translateX(2000px);
+    }
+}
+
+
+.woman{
+    position: absolute;
+    margin-left: 172px;
+    margin-top: -380px;
+    width: 90px;
+    height: 260px;
+    animation-name: woman;
+    // margin-bottom: 200px;
+}
+
+// @keyframes woman{
+//     0%{
+//         animation-delay: 1s;
+//         animation-timing-function: 1s;
+//         animation-duration: 1s;
+//         background-image: url('../../img/icons/taxsay.svg');
+//         // animation-iteration-count: initial;
+//         position: absolute;
+//     }
+// }
+
+.cases{
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 172px;
+}
+
+.man{
+    position: absolute;
+    margin-left: 288px;
+    margin-top: -460px;
+    width: 190px;
+    height: 380px;
+}
+
+.lantern1{
+    width: 250px;
+    height: 550px;
+    position: absolute;
+    margin-top: -685px;
+    margin-left: 900px;
+}
+
+.hand{
+    position: absolute;
+    // margin-top: -148px;
+    // margin-left: 5px;
 }
