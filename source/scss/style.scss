@@ -42,6 +42,8 @@
 @import"_blocks/popup";
 @import"_blocks/animation";
 @import"_blocks/pagination";
+@import"_blocks/svg";
+@import"_blocks/grid";
 
 a:hover {
   text-decoration: none;
@@ -122,6 +124,10 @@ a:hover {
   display: flex;
   position: relative;
   background: #EEE4DB;
+  @media screen and (max-width: 768px) {
+    width: 648px;
+    height: 411px;  
+  }
 }
 
 .slider__menu {
@@ -172,7 +178,11 @@ a:hover {
 .slide__text {
   padding-left: 71px;
   padding-top: 89px;
+  @media screen and (max-width: 768px) {
+    padding-left: 0;
+  }
 }
+
 
 .slide__text_name {
   font-size: 40px;
@@ -202,6 +212,12 @@ a:hover {
   height: 461px;
   left: 555px;
   top: -80px;
+  @media screen and (max-width: 768px) {
+    // margin-right: 0px;
+    width: 385px;
+    height: 286px;
+    margin-top: 210px;
+  }
 }
 
 .paragraph__item {
@@ -219,6 +235,11 @@ a:hover {
   text-transform: uppercase;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-bottom: 90px;
+  @media screen and (max-width: 768px) {
+    width: 648px;
+    height: 39px; 
+  }
 }
 
 
@@ -267,6 +288,12 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  &__img {
+    @media screen and (max-width: 768px) {
+      width: 258px;
+      height: 512px;
+    }
+  }
 }
 
 .block__info {
@@ -500,6 +527,10 @@ a:hover {
   opacity: 0.5;
   text-decoration: none;
   list-style-type: none;
+  // @media screen and (max-width:1179px) {
+  //   flex-wrap: wrap;
+  //   align-items: center;
+  // }
 }
 
 .blog__info_list {

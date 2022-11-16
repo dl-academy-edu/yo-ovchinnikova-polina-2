@@ -10,10 +10,14 @@
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 90px;
+   
     &__wraper {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      @media screen and (max-width: 1170px) {
+        padding: 50 50px;
+      }
       }
     &__nav {
       padding-left: 10px;
@@ -38,6 +42,9 @@
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
     &__nav-item {
       // @include font($font-weight 400);
@@ -57,9 +64,15 @@
   }
   
   .button_search {
-    padding-left: 560px;
+    padding-left: 451px;
     padding-right: 23px;
+    @media screen and (max-width: 768px) {
+      padding-left: 0px;
+      padding-right: 0;
+
+    }
   }
+  
   
   .contact__us {
     @include font;
@@ -68,4 +81,7 @@
     font-family: 'Open Sans';
     color: #1E0606;
     text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }

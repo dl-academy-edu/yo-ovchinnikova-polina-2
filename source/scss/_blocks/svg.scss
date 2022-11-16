@@ -1,0 +1,44 @@
+.rect{
+    position: absolute;
+}
+.sun{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 20px;
+    animation-name: sun;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    // animation-timing-function: cubic-bezier(0.42, 1, 2, 3);
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    // transition-delay: 5s;
+    // transition-timing-function: cubic-bezier(0, 1, 2, 3);
+}
+
+@keyframes sun{
+    0%{
+        // transform: rotateX('angle');
+        animation-timing-function: cubic-bezier(0.5, 1, 0.2, 2);
+    }
+    50%{
+        transform: rotateY('angle');
+    }
+
+    100%{
+        transform: translateX(50px);
+    }
+}
+
+// .rect1{
+//     position: relative;
+//     margin-left: 500px;
+//     width: 187px;
+//     height: 324px;
+//     margin-top: 0px;
+// }
+
+// .line{
+//     position: absolute;
+//     margin-left: -150px;
+//     margin-top: 20px;
+// }

@@ -62,7 +62,9 @@ margin-left: 1190px;
         background-image: url(../../img/icons/taxsay.svg);
         position: absolute;
         background-repeat: no-repeat;
-        margin-left: 300px;
+        // margin-left: 300px;
+        // transition-delay: 1s;
+        // transition-timing-function: cubic-bezier(0, 0, 1, 1);
     }
     100%{
         transform: translateX(-1000px);

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@100;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>DL Academy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <section class="container">
+      <h1 class="category">Svg</h1>
+      <div class="breadcrumb">
+        <ul class="breadcrumb__list">
+            @@include('blocks/breadcrumbs.html', {
+                "link": "#",
+                "class": "breadcrumb__link_home",
+                "text": "Home",
+                "img": ""
+            })
+            @@include('blocks/breadcrumbs.html', {
+                "link": "#",
+                "class": "breadcrumb_vector",
+                "text": "",
+                "img": "./img/icons/VectorStroke.svg"
+            })
+            @@include('blocks/breadcrumbs.html', {
+                "link": "#",
+                "class": "breadcrumb__link_catalog",
+                "text": "Svg",
+                "img": ""
+            })
+        </ul>
+    </section>
+    <section class="container">
+        <div>
+            <img class="rect" src="./img/icons/rect.svg" alt="">
+            <img class="sun" src="./img/icons/sun.svg" alt="">
+            <!-- <img class="rect1" src="./img/icons/rect1.svg" alt=""> -->
+            <!-- <img class="line" src="./img/icons/line.svg" alt=""> -->
+        </div>
+    </section>
+    @@include('blocks/footer.html')
+  </body>

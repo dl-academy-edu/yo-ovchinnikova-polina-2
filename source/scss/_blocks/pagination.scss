@@ -27,17 +27,6 @@
       list-style-type: none;
       padding-right: 67px;
     }
-    &__number-one {
-      text-decoration: none;
-      list-style-type: none;
-      font-family: 'Montserrat';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 20px;
-      text-transform: uppercase;
-      color: #C29974;
-    }
     &__number {
       text-decoration: none;
       list-style-type: none;
@@ -48,6 +37,12 @@
       line-height: 20px;
       text-transform: uppercase;
       color: #1E0606;
+    }
+    &__number:active{
+      color: #C29974;
+    }
+    &__number:hover{
+      color: #C29974;
     }
     &__vector-left {
       border: none;

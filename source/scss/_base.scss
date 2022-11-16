@@ -37,7 +37,17 @@ a {
 .container {
   max-width: 1180px;
   margin: 0 auto;
-}
+  @media screen and (max-width: 1177px) {
+    padding: 0 20px;
+  };
+//   @media screen and (max-width: 1179px) {
+//     padding: 0 20px;
+//   }
+//   @media screen and (max-width: 1150px) {
+//     padding: 0 20px;
+//   }
+  }
+
 
 
 
