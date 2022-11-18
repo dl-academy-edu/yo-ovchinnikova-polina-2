@@ -1,13 +1,23 @@
 .container__footer {
   margin-top: 155px;
   background: #434343;
+  @media screen and (max-width: 786px) {
+    flex-wrap: wrap;
+  }
   }
   
   .footer__group {
       display: flex;
+      @media screen and (max-width: 786px) {
+        flex-wrap: wrap;
+      }
   }
   
-  
+  .group__nav {
+    @media screen and (max-width: 1120px) {
+        margin: 0px;
+      }
+  }
   
   .group__nav_name {
       font-family: 'Open Sans';
@@ -21,6 +31,11 @@
       width: 380px;
       margin-right: 25px;
       padding-bottom: 23px;
+      @media screen and (max-width: 1120px) {
+        margin: 0px;
+        border-bottom: 1px solid #666666;
+        width: 200px;
+      }
   }
   
   .group__nav_item {
@@ -126,6 +141,11 @@
       margin-right: 25px;
       padding-bottom: 23px;
       width: 380px;
+      @media screen and (max-width: 1120px) {
+        margin: 0px;
+        border-bottom: 1px solid #666666;
+        width: 200px;
+      }
   }
   
   .group__info {
@@ -177,6 +197,11 @@
       padding-bottom: 23px;
       border-bottom: 1px solid #666666;
       margin-bottom: 49px;
+      @media screen and (max-width: 1120px) {
+        // margin: 0px;
+        border-bottom: 1px solid #666666;
+        width: 200px;
+      }
   }
   
   .form {
@@ -198,6 +223,10 @@
       color: #EBEBEB;
       padding-left: 15px;
       border: none;
+      @media screen and (max-width: 1206px) {
+        width: 202px;
+        height: 40px;
+      }
   }
   
   .button_join {
@@ -228,8 +257,7 @@
       padding-bottom: 23px;
       border-bottom: 1px solid #666666;
       padding-bottom: 153px;
-      margin-bottom: 23px;
-      
+      margin-bottom: 23px;  
   }
   
   .group__connect_item {

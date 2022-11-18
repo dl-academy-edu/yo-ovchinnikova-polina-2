@@ -217,12 +217,13 @@ a:hover {
   height: 461px;
   left: 470px;
   top: -50px;
-  // @media screen and (max-width: 768px) {
-  //   margin-right: 0px;
-  //   width: 385px;
-  //   height: 286px;
-  //   margin-top: 210px;
-  // }
+  @media screen and (max-width: 768px) {
+    // margin-bottom: -100px;
+    margin-left: -200px;
+    // width: 385px;
+    // height: 286px;
+    margin-top: 0px;
+  }
 }
 
 .paragraph__item {
@@ -293,8 +294,6 @@ a:hover {
 }
 
 .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   &__img {
     @media screen and (max-width: 768px) {
@@ -306,6 +305,18 @@ a:hover {
 
 .block__info {
   padding-left: 120px;
+  @media screen and (max-width: 768px) {
+    // position: absolute;
+    // width: 334px;
+    // height: 446px;
+    // left: 354px;
+    // top: 1045px;
+  }
+  //  @media screen and (max-width: 385px) {
+  //     width: 98px;
+  //     height: 33px;
+  //     flex-wrap: wrap;
+  //     }
 }
 
 .block__name {
@@ -397,12 +408,20 @@ a:hover {
   @media screen and (max-width: 768px) {
     width: 98px;
     height: 33px;
+    
     }
+    @media screen and (max-width: 385px) {
+      width: 98px;
+      height: 33px;
+      flex-wrap: wrap;
+      // justify-content: center;
+      // align-content: flex-start;
+      }
 }
 
 .adv__list-item {
   padding-top: 70px;
-  padding-right: 127px;
+  // padding-right: 127px;
 }
 
 .block {
