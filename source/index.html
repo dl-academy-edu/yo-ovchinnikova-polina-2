@@ -26,6 +26,29 @@
     @@include('blocks/header.html')
 <main>
     <section class="container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <video width="480px" autoplay loop>
+        <source src="https://archive.org/download/BrightSkyAndClouds/SkyAndCloudsh264.mp4" 
+        type="video/mp4">
+        <source src="https://archive.org/download/BrightSkyAndClouds/SkyAndCloudsh264.mov" 
+        type="video/mov">
+        <source src="https://archive.org/download/BrightSkyAndClouds/SkyAndCloudsh264.webm" 
+        type="video/webm">
+        </video>
+        <audio controls>
+            <!-- <source
+              src="./audio/audio.mp3"
+              type="audio/ogg; codecs=vorbis"
+            > -->
+            <source
+              src="./audio/audio.mp3"
+              type="audio/mpeg"
+            >
+            Тег audio не поддерживается вашим браузером.
+          </audio>
+          
+    </section>
+    <section class="container">
         <div class="slider">
             <div class="slider__menu">
                 <span class="slider__menu_item">01</span>
@@ -45,7 +68,7 @@
                 })
             </div>
             <picture class="main__banner">
-                <source srcset="./img/imagemonster.png, ./img/image.png 2x" widht="292" height="226" media="(max-widht: 375px)">
+                <source srcset="./img/imagemonster.png, ./img/image.png 2x" widht="260" height="200" media="(max-widht: 375px)">
                 <source srcset="./img/imagemonster.png, ./img/image.png 2x" widht="385" height="286" media="(max-widht: 768px)">
                 <source srcset="./img/imagemonster.png, ./img/image.png 2x" widht="636" height="490">
                 <img class="image__monster" src="./img/imagemonster.png" srcset="./img/imagemonster.png" alt="image">
@@ -102,9 +125,9 @@
         <div class="info">
             <div class="">
                 <picture class="">
-                    <source srcset="./img/imagewomen.jpg, ./img/wmn.jpg 2x" width="480" height="559">
-                    <source srcset="./img/imagewomen.jpg, ./img/wmn.jpg 2x" width="258" height="512" media="(max-width: 768px)">
-                    <source srcset="./img/imagewomen.jpg, ./img/wmn.jpg 2x" width="335" height="357" media="(max-width: 385px)">
+                    <source srcset="./img/imagewomen.jpg, ../img/wmn.jpg 2x" width="480" height="559">
+                    <source srcset="./img/imagewomen.jpg, ../img/wmn.jpg 2x" width="258" height="512" media="(max-width: 785px)">
+                    <source srcset="./img/imagewomen.jpg, ../img/wmn.jpg 2x" width="300" height="320" media="(max-width: 375px)">
                     <img class="info__img" src="./img/imagewomen.jpg" srcset="./img/imagewomen.jpg" alt="image">
                 </picture>
             </div>
@@ -128,16 +151,16 @@
         <h2 class="name__section">company brand</h2>
         <ul class="adv__list">
             <li class="adv__list-item">
-                <img src="./img/icons/mail.svg" alt="logo">
+                <img class="adv__list-img" src="./img/icons/mail.svg" alt="logo">
             </li>
             <li class="adv__list-item">
-                <img src="./img/icons/apple.svg" alt="logo">
+                <img class="adv__list-img" src="./img/icons/apple.svg" alt="logo">
             </li>
             <li class="adv__list-item">
-                <img src="./img/icons/eltex.svg" alt="logo">
+                <img class="adv__list-img" src="./img/icons/eltex.svg" alt="logo">
             </li>
             <li class="adv__list-item">
-                <img src="./img/icons/owox.svg" alt="logo">
+                <img class="adv__list-img" src="./img/icons/owox.svg" alt="logo">
             </li>
         </ul>
     </section>

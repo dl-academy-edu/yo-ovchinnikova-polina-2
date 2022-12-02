@@ -40,6 +40,12 @@ a {
   @media screen and (max-width: 1177px) {
     padding: 0 20px;
   };
+  @media screen and (max-width: 785px) {
+    overflow: hidden;
+  };
+  @media screen and (max-width: 375px) {
+    overflow: hidden;
+  };
 //   @media screen and (max-width: 1179px) {
 //     padding: 0 20px;
 //   }
