@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@100;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>DL Academy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <section class="container">
+      <h1 class="category">Animation scene</h1>
+      <div class="breadcrumb">
+        <ul class="breadcrumb__list">
+            @@include('blocks/breadcrumbs.html', {
+                "link": "#",
+                "class": "breadcrumb__link_home",
+                "text": "Home",
+                "img": ""
+            })
+            @@include('blocks/breadcrumbs.html', {
+                "link": "#",
+                "class": "breadcrumb_vector",
+                "text": "",
+                "img": "./img/icons/VectorStroke.svg"
+            })
+            @@include('blocks/breadcrumbs.html', {
+                "link": "#",
+                "class": "breadcrumb__link_catalog",
+                "text": "Animation",
+                "img": ""
+            })
+        </ul>
+    </section>
+    <section class="animation">
+      <div class="animation__world">
+        <img class="animation__sky" src="./img/Cloudsandsun.png" alt="">
+      </div>
+      <div>
+        <img class="animation__static" src="./img/icons/city2.svg" alt="">
+        <!-- <img class="road" src="./img/icons/road.svg" alt=""> -->
+        <img class="carfour" src="./img/icons/carfour.svg" alt="">
+        <img class="carthree" src="./img/icons/carthree.svg" alt="">
+        <img class="cartwo" src="./img/icons/cartwo.svg" alt="">
+        <img class="carone" src="./img/icons/carone.svg" alt="">
+        <img class="lanterns" src="./img/icons/lanterns.svg" alt="">
+        <img class="lanterns1" src="./img/icons/lanterns.svg" alt="">
+      </div>
+      <div>
+        <!-- <img class="road1" src="./img/icons/road.svg" alt=""> -->
+        <img class="taxi" src="./img/icons/cartax.svg" alt="">
+        <img class="taxi__say" src="./img/icons/taxsay.svg" alt="">
+      </div>
+      <div>
+        <img class="woman" src="./img/icons/woman.svg" alt="">
+        <img class="cases" src="./img/icons/cases.svg" alt="">
+        <img class="hand" src="./img/icons/hand.svg" alt="">
+        <img class="man" src="./img/icons/man.svg" alt="">
+        <img class="lantern1" src="./img/icons/lantern1.svg" alt="">
+      </div>
+    </section>
+    @@include('blocks/footer.html')
+  </body>

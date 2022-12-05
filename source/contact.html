@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@100;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>DL Academy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+<body>
+    @@include('blocks/header.html')
+      <main>
+        <section class="container">
+            <div class="contact">
+                <h1 class="category_name">Contact us</h1>
+                <div class="breadcrumb">
+                    <ul class="breadcrumb__list">
+                        @@include('blocks/breadcrumbs.html', {
+                            "link": "#",
+                            "class": "breadcrumb__link_home",
+                            "text": "Home",
+                            "img": ""
+                        })
+                        @@include('blocks/breadcrumbs.html', {
+                            "link": "#",
+                            "class": "breadcrumb_vector",
+                            "text": "",
+                            "img": "./img/icons/VectorStroke.svg"
+                        })
+                        @@include('blocks/breadcrumbs.html', {
+                            "link": "#",
+                            "class": "breadcrumb__link_catalog",
+                            "text": "Contact Us",
+                            "img": ""
+                        })
+                    </ul>
+                </div>
+            </div>
+          </section>
+            <section class="container">
+                <h2 class="name__section">data form</h2>
+            <div class="contact__block">
+                <div class="contact__form">
+                    <form class="form__area" action="#">
+                        <div class="name__area">
+                            <label class="name__item" for="input-name">Name</label>
+                            <input class="name__input" type="text" name="input-name" id="input-name" value="Ivan Ivanov">
+                        </div>
+                        <div class="contact__details">
+                            <div class="phone__area">
+                                <label class="name__item_contact" for="input-phone">Phone</label>
+                                <input class="phone__input" type="text" name="input-phone" id="input-phone">
+                            </div>
+                            <div class="email__area">
+                                <label class="name__item_contact" for="input-email">Email</label>
+                                <input class="email__input" type="text" name="input-email" id="input-email">
+                            </div>
+                        </div>
+                        <div class="message__area">
+                            <label class="name__item" for="textarea">Message</label>
+                            <textarea class="message__block" name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="deal">
+                            <input class="check__deal" type="checkbox" name="checkbox" id="checkbox">
+                            <span class="custom__checkbox_deal"></span>
+                            <label class="deal__info" for="checkbox">By clicking on the button, you consent to the processing of your personal data</label>
+                            @@include('blocks/button.html', {
+                                "text": "Submit",
+                                "class":"button"
+                            })
+                        </div>
+                    </form>
+                </div>               
+                <div class="contact__paragraph">
+                    <p class="contact__paragraph-text">Our support team are on-hand to assist with any issues you are experiencing.</p>
+                    <p class="contact__paragraph-text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+                    <p class="contact__paragraph-item">An expert is waiting to help you!</p>
+                </div>
+            </div>
+            </section>
+      </main>
+      @@include('blocks/footer.html')
+</body>
+</html>

@@ -1,0 +1,117 @@
+.category {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #1E0606;
+  }
+  
+  .category__menu {
+    padding-top: 30px;
+  }
+  
+  .menu__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu__list {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 785px) {
+    overflow: hidden;
+      }
+}
+
+
+.category__menu-item {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    background-clip: content-box;
+    max-width: 380px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    @media screen and (max-width: 785px) {
+      // flex-wrap: wrap;
+      // width: 203px;
+      // height: 196px;
+    }
+
+}
+
+.category__menu-none {
+  background-clip: content-box;
+  background: #D5D4E1;
+  max-width: 380px;
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  padding-right: 10px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  background-clip: content-box;
+  max-width: 380px;
+  margin-right: 10px;
+}
+
+
+.category__link {
+    font-size: 26px;
+    line-height: 32px;
+    position: absolute;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: normal;
+    text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+    max-width: 170px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.category__menu-item:nth-child(4) {
+  // padding-bottom: 23px;
+  margin-left: 210px;
+  // padding-top: 23px;
+  @media screen and (max-width: 851px) {
+    margin-left: 0;
+  }
+  @media screen and (max-width: 785px) {
+    margin-left: 0;
+  }
+
+}
+
+
+.menu__list_catalog {
+  display: flex;
+  // justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  @media screen and (max-width: 785px) {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 0;
+    // flex-wrap: wrap;
+    // width: 203px;
+    // height: 196px;
+  }
+}
+
+.category__catalog {
+  background: #D5D4E1;
+  background-clip: content-box;
+}
+
+

@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@100;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="google" content="notranslate">
@@ -21,20 +22,171 @@
     <link href="css/style.min.css" rel="stylesheet">
     <!-- endbuild -->
   </head>
-  <body>
-    <div class="wrapper">
-      <main class="content">
-        <div class="coming-soon">
-          <h1 class="coming-soon__title">
-            <span>A</span>
-            <span>T</span>
-            <span>X</span>
-          </h1>
+<body>
+    @@include('blocks/header.html')
+<main>
+    <section class="container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <video width="480px" autoplay loop>
+        <source src="https://archive.org/download/BrightSkyAndClouds/SkyAndCloudsh264.mp4" 
+        type="video/mp4">
+        <source src="https://archive.org/download/BrightSkyAndClouds/SkyAndCloudsh264.mov" 
+        type="video/mov">
+        <source src="https://archive.org/download/BrightSkyAndClouds/SkyAndCloudsh264.webm" 
+        type="video/webm">
+        </video>
+        <audio controls>
+            <!-- <source
+              src="./audio/audio.mp3"
+              type="audio/ogg; codecs=vorbis"
+            > -->
+            <source
+              src="./audio/audio.mp3"
+              type="audio/mpeg"
+            >
+            Тег audio не поддерживается вашим браузером.
+          </audio>
+          
+    </section>
+    <section class="container">
+        <div class="slider">
+            <div class="slider__menu">
+                <span class="slider__menu_item">01</span>
+                <ul class="slider__switch">
+                    <li class="slider__list_item"><button class="slider__switch_item" type="button"></button></li>
+                    <li class="slider__list_item"><button class="slider__switch_item1" type="button"></button></li>
+                    <li class="slider__list_item"><button class="slider__switch_item1" type="button"></button></li>
+                    <li class="slider__list_item"><button class="slider__switch_item1" type="button"></button></li>
+                </ul>
+            </div>
+            <div class="slide__text">
+                <h1 class="slide__text_name">THE OOH NOO COLLECTION</h1>
+                <p class="slide__text_paragraph">Designed in Slovenia</p>
+                @@include('blocks/button.html', {
+                    "text": "Explore Now",
+                    "class":"button"
+                })
+            </div>
+            <picture class="main__banner">
+                <source srcset="./img/imagemonster.png, ./img/image.png 2x" widht="260" height="200" media="(max-widht: 375px)">
+                <source srcset="./img/imagemonster.png, ./img/image.png 2x" widht="385" height="286" media="(max-widht: 768px)">
+                <source srcset="./img/imagemonster.png, ./img/image.png 2x" widht="636" height="490">
+                <img class="image__monster" src="./img/imagemonster.png" srcset="./img/imagemonster.png" alt="image">
+            </picture>
         </div>
-      </main>
-      @@include('blocks/footer.html')
-    </div>
+        <p class="paragraph__item">Free (continental) USA shipping on all orders of $100 USD or more!</p>
+    </section>
 
-    <script src="js/app.js" defer></script>
-  </body>
+<div class="container">
+        <h2 class="category">Category Products</h2>
+    <div class="category__menu">
+        <ul class="menu__list">
+            @@include('blocks/category_list.html', {
+                    "link": "#",
+                    "class": "category__link",
+                    "text": "Apparel kids",
+                    "img": "./img/Rectangle.jpg",
+                    "desc":"",
+                    "price":""
+                })
+            @@include('blocks/category_list.html', {
+                    "link": "#",
+                    "class": "category__link",
+                    "text": "Holiday shop",
+                    "img": "./img/imagesock.jpg",
+                    "desc":"",
+                    "price":""
+                })
+            @@include('blocks/category_list.html', {
+                    "link": "#",
+                    "class": "category__link",
+                    "text": "TOYS",
+                    "img": "./img/imagedeer.jpg",
+                    "desc":"",
+                    "price":""
+                })
+            @@include('blocks/category_list.html', {
+                    "link": "#",
+                    "class": "category__link",
+                    "text": "ACCESSORIES",
+                    "img": "./img/Group152.jpg",
+                    "desc":"",
+                    "price":""
+                })
+        </ul>
+    </div>
+        <div class="wrap">
+            <button class="vector_left"></button>
+            <button class="vector_right"></button>
+            <p class="wrap__paragraph">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
+        </div>
+    </div>
+    <section class="container">
+        <div class="info">
+            <div class="">
+                <picture class="">
+                    <source srcset="./img/imagewomen.jpg, ../img/wmn.jpg 2x" width="480" height="559">
+                    <source srcset="./img/imagewomen.jpg, ../img/wmn.jpg 2x" width="258" height="512" media="(max-width: 785px)">
+                    <source srcset="./img/imagewomen.jpg, ../img/wmn.jpg 2x" width="300" height="320" media="(max-width: 375px)">
+                    <img class="info__img" src="./img/imagewomen.jpg" srcset="./img/imagewomen.jpg" alt="image">
+                </picture>
+            </div>
+            <div class="block__info">
+                <h2 class="block__name">Delivery</h2>
+                <ul class="block__list">
+                    <li class="block__list-delivery">Delivery</li>
+                    <li class="block__list-guarantee">Guarantee</li>
+                    <li class="block__list-credit">Credit</li>
+                </ul>
+                <p class="info__paragraph_one">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <p class="info__paragraph_two">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with to thank!</p>
+                @@include('blocks/button.html', {
+                    "text": "LEARN MORE",
+                    "class":"button"
+                })
+            </div>
+        </div>  
+    </section>
+    <section class="container">
+        <h2 class="name__section">company brand</h2>
+        <ul class="adv__list">
+            <li class="adv__list-item">
+                <img class="adv__list-img" src="./img/icons/mail.svg" alt="logo">
+            </li>
+            <li class="adv__list-item">
+                <img class="adv__list-img" src="./img/icons/apple.svg" alt="logo">
+            </li>
+            <li class="adv__list-item">
+                <img class="adv__list-img" src="./img/icons/eltex.svg" alt="logo">
+            </li>
+            <li class="adv__list-item">
+                <img class="adv__list-img" src="./img/icons/owox.svg" alt="logo">
+            </li>
+        </ul>
+    </section>
+    <section class="container">
+        <div class="block">
+            <div class="block__buy">
+                <h2 class="block__name_item">Design Life Kids</h2>
+                <p class="block__name_paragraph">About Us</p>
+                <p class="block__name_outline">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by.</p>
+                @@include('blocks/button.html', {
+                    "text": "Buy now",
+                    "class":"button_item"
+                })
+            </div>
+            <div class="block__contacts">
+                <h2 class="block__name_item">Contacts</h2>
+                <p class="block__name_outline1">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
+                <!-- <img class="maps" src="./img/imagemap.png" alt="maps"> -->
+                <iframe class="maps" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3ccdb9aa02433346b55b3938e25a374783187583fc2a3a7d1a8d7996b7744c51&amp;source=constructor" width="483" height="196" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+@@include('blocks/footer.html')
+</main>
+@@include('blocks/popup.html')
+</div>
+<script src="./js/popup.js"></script>
+</body>
 </html>

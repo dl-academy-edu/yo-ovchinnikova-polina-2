@@ -1,22 +1,11 @@
-@mixin no-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+@mixin font($font-size: 14px, $line-height: 19px, $font-weight: 700) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
 }
 
-@mixin no-btn {
-  background: transparent;
-  border: 0;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+@mixin img($widht:280px, $height:270px){
+  width: $widht;
+  height: $height;
 }
 
-@mixin clearfix {
-  &::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-}

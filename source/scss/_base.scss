@@ -21,3 +21,329 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+
+*{
+  margin: 0px; 
+  padding: 0px;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  @media screen and (max-width: 1177px) {
+    padding: 0 20px;
+  };
+  @media screen and (max-width: 785px) {
+    overflow: hidden;
+  };
+  @media screen and (max-width: 375px) {
+    overflow: hidden;
+  };
+//   @media screen and (max-width: 1179px) {
+//     padding: 0 20px;
+//   }
+//   @media screen and (max-width: 1150px) {
+//     padding: 0 20px;
+//   }
+  }
+
+
+
+
+
+  
+
+
+  .category_name {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 49px;
+      text-transform: uppercase;
+      color: #1E0606;
+      @media screen and (max-width: 385px) {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+          }
+  }
+
+
+
+
+  
+  .pagination__nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-top: 53px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+  }
+  
+  .pagination__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      text-decoration: none;
+      list-style-type: none;
+      padding-left: 457px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+  }
+  
+  .pagination__list_item {
+      text-decoration: none;
+      list-style-type: none;
+      padding-right: 67px;
+  }
+  
+  .page_number_one {
+      text-decoration: none;
+      list-style-type: none;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #C29974;
+  }
+  
+  .page_number {
+      text-decoration: none;
+      list-style-type: none;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #1E0606;
+  }
+  
+  .vector__pag_left {
+      border: none;
+      background: none;
+      width: 13px;
+      height: 26px;
+  }
+  
+  .vector__pag_right {
+      border: none;
+      background: none;
+      width: 13px;
+      height: 26px;
+      padding-left: 390px;
+  }
+
+
+  .contact__block {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+  }
+  
+  .contact__form {
+      background: #E5EAF8;
+      width: 680px;
+      height: 542px;
+  }
+  
+  
+  .form__area {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+  }
+  
+  .name__area {
+      padding-top: 42px;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  }
+  
+  .name__item {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;  
+      color: #1E0606;
+      margin-left: 40px;
+  }
+  
+  .name__input {
+      width: 580px;
+      height: 50px;
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-bottom: 20px;
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: #1E0606;
+      padding-left: 20px;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact__details {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+  }
+  
+  .phone__area {
+      padding-left: 40px;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+  }
+  
+  .phone__input {
+      width: 290px;
+      height: 50px;
+      margin-bottom: 20px;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .email__area {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding-right: 20px;
+  }
+  
+  .email__input {
+      width: 290px;
+      height: 50px;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .name__item_contact {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;  
+      color: #1E0606;
+  }
+  
+  .message__area {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  }
+  
+  .message__block {
+      width: 600px;
+      height: 150px;
+      margin-left: 40px;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      resize: none;
+  }
+  
+  .deal {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding-top: 20px;
+      margin-left: 40px;
+  }
+  
+  .check__deal {
+      opacity: 0;
+      position: absolute;
+      z-index: -1;
+      
+  }
+  
+  .custom__checkbox_deal {
+      background-image: url(../pic/icons/Rectangle22.svg);
+       content: "";
+      width: 19px;
+      height: 19px;
+      cursor: pointer;
+      display: inline-block;
+      margin-right: 15px;
+  }
+  
+  
+  
+  .custom__checkbox_deal::before {
+      background-image: url(../pic/icons/Vectorcontact.svg);
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      content: '';
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      margin-top: 1px;
+      margin-left: 3px;
+  }
+  
+  
+  .deal__info {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+  }
+  
+//   .button__deal {
+//       padding-top: 20px;
+//       padding-bottom: 90px;
+//       margin-bottom: 128px;
+//       margin-top: 20px;
+//       font-size: 16px;
+//       line-height: 22px; 
+//       font-weight: 700; 
+//       background: #000000;
+//       color: white;
+//       padding: 9px 22px;
+//       font-family: 'Open Sans';
+//       text-transform: uppercase;
+//       cursor: pointer;
+//   }
+  
+  .button__deal:active {
+      background: #6a6969;
+  }
+
+  .name__section {
+      display: none;
+  }
+
+
+
+
+
+  

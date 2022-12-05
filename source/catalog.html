@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@100;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>DL Academy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+<body>
+   @@include('blocks/header.html')
+    <main>
+    <section class="container">
+        <div class="catalog">
+            <h1 class="category_name">Category Products</h1>
+                <div class="breadcrumb">
+                    <ul class="breadcrumb__list">
+                        @@include('blocks/breadcrumbs.html', {
+                            "link": "#",
+                            "class": "breadcrumb__link_home",
+                            "text": "Home",
+                            "img": ""
+                        })
+                        @@include('blocks/breadcrumbs.html', {
+                            "link": "#",
+                            "class": "breadcrumb_vector",
+                            "text": "",
+                            "img": "./img/icons/VectorStroke.svg"
+                        })
+                        @@include('blocks/breadcrumbs.html', {
+                            "link": "#",
+                            "class": "breadcrumb__link_catalog",
+                            "text": "Catalog",
+                            "img": ""
+                        })
+                    </ul>
+                </div>
+            <div class="category__menu_catalog">
+                    <ul class="menu__list_catalog">
+                        @@include('blocks/category_list.html', {
+                            "link": "#",
+                            "class": "category__link",
+                            "text": "Apparel kids",
+                            "img": "./img/Rectangle.jpg",
+                            "desc":"",
+                            "price":""
+                        })
+                    @@include('blocks/category_list.html', {
+                            "link": "#",
+                            "class": "category__link",
+                            "text": "Holiday shop",
+                            "img": "./img/imagesock.jpg",
+                            "desc":"",
+                            "price":""
+                        })
+                    @@include('blocks/category_list.html', {
+                            "link": "/toys.html",
+                            "class": "category__link",
+                            "text": "TOYS",
+                            "img": "./img/imagedeer.jpg",
+                            "desc":"",
+                            "price":""
+                        })
+                    @@include('blocks/category_list.html', {
+                            "link": "#",
+                            "class": "category__link",
+                            "text": "ACCESSORIES",
+                            "img": "./img/Group152.jpg",
+                            "desc":"",
+                            "price":""
+                        })
+                        @@include('blocks/category_list.html', {
+                            "link": "#",
+                            "class": "category__link",
+                            "text": "Sale",
+                            "img": "./img/imageflamingo.jpg",
+                            "desc":"",
+                            "price":""
+                        })
+                        @@include('blocks/category_list.html', {
+                            "link": "#",
+                            "class": "category__link",
+                            "text": "APPAREL ADULTS",
+                            "img": "./img/imagedress.jpg",
+                            "desc":"",
+                            "price":""
+                        })
+                    </ul>
+            </div>
+            <div class="product">
+                <h2 class="product__name">Product Description</h2>
+                <p class="product__paragraph">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+                <p class="product__paragraph">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+                <p class="product__paragraph">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+            </div>
+        </div>
+    </section>
+    @@include('blocks/footer.html')
+    </main>
+</body>
+</html>
