@@ -22,8 +22,8 @@
     <link href="css/style.min.css" rel="stylesheet">
     <!-- endbuild -->
   </head>
-  @@include('blocks/header.html')
 <body>
+    @@include('blocks/header.html')
     <section class="container">
       <div class="toys">
           <h1 class="category_name">Toy for kids</h1>
@@ -33,7 +33,7 @@
                     "link": "#",
                     "class": "breadcrumb__link_home",
                     "text": "Home",
-                    "img": ""
+                    "img": "#"
                 })
                 @@include('blocks/breadcrumbs.html', {
                     "link": "#",
@@ -45,7 +45,7 @@
                     "link": "#",
                     "class": "breadcrumb__link_home",
                     "text": "Catalog",
-                    "img": ""
+                    "img": "#"
                 })
                 @@include('blocks/breadcrumbs.html', {
                     "link": "#",
@@ -57,7 +57,7 @@
                     "link": "#",
                     "class": "breadcrumb__link_catalog",
                     "text": "Toys",
-                    "img": ""
+                    "img": "#"
                 })
               </ul>
           </div>
@@ -102,7 +102,7 @@
               <ul class="delivery__chek_list">
                   <li class="delivery__chek_item">
                       <input class="delivery__real_check" type="radio" name="delivery" id="input-free">
-                      <span class="delivery__custom_check" id="input-free"></span>
+                      <span class="delivery__custom_check"></span>
                       <label class="delivery__item" for="input-free">Free shipping</label>
                   </li>
                   <li class="delivery__chek_item">
