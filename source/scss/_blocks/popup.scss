@@ -8,6 +8,9 @@
     background: rgba(125, 151, 218, 0.8) 
 } 
  
+.overlay {
+    z-index: -1;
+}
  
 .popup__body { 
     position: fixed; 
