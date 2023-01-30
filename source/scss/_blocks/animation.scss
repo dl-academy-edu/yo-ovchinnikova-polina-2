@@ -16,29 +16,46 @@
 // }
 
 .animation{
-    // position: relative;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    // max-width: 100%;
+}
+.animation__static {
+    // max-width: 100%;
 }
 
 .city{
-    position: absolute;
+    // position: absolute;
     margin-top: 10px;
 }
 
 .lanterns{
 position: absolute;
-width: 151px;
-height: 395px;
-margin-top: -580px;
-margin-left: 480px;
+left: 29%;
+top: 25%;
+width: 9%;
+height: 47%;
+z-index: 4;
+// width: 151px;
+// height: 395px;
+// margin-top: -580px;
+// margin-left: 480px;
 // padding-bottom: 200px;
 }
 
 .lanterns1{
     position: absolute;
-width: 151px;
-height: 395px;
-margin-top: -580px;
-margin-left: 1190px;
+    position: absolute; 
+    left: 83.3%; 
+    top: 24.8%; 
+    width: 9%; 
+    height: 47.5%; 
+    z-index: 4; 
+// width: 151px;
+// height: 395px;
+// margin-top: -580px;
+// margin-left: 1190px;
 }
 
 
@@ -46,32 +63,40 @@ margin-left: 1190px;
 .taxi{
     animation-iteration-count: infinite;
     animation-name: taxi;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-timing-function: linear;
     position: absolute;
     width: 700px;
     height: 200px;
     margin-top: -300px;
+    z-index: 4;
 }
 
 @keyframes taxi{
     0%{
         transform: translateX(1500px);
+
     }
     50%{
-        background-image: url(../../img/icons/taxsay.svg);
+        // background-image: url(../../img/icons/taxsay.svg);
         position: absolute;
         background-repeat: no-repeat;
         // margin-left: 300px;
         // transition-delay: 1s;
         // transition-timing-function: cubic-bezier(0, 0, 1, 1);
     }
+    70% {
+        background-image: url(../../img/icons/taxsay.svg);
+        background-repeat: no-repeat;
+    }
     100%{
-        transform: translateX(-1000px);
+        transform: translateX(-1500px);
+        
     }
 }
 .taxi__say{
-
+left: 20%;
+// position: absolute;
 }
 
 .road{
@@ -99,7 +124,7 @@ margin-left: 1190px;
 }
 @keyframes carone{
     0%{
-        transform: translateX(-900px);
+        transform: translateX(-1500px);
     }
     // 50%{
         // right: 500px;
@@ -122,7 +147,7 @@ margin-left: 1190px;
 
 @keyframes cartwo{
     0%{
-        transform: translateX(-900px);
+        transform: translateX(-1500px);
     }
     // 50%{
         // right: 500px;
@@ -146,7 +171,7 @@ margin-left: 1190px;
 
 @keyframes carthree{
     0%{
-        transform: translateX(-900px);
+        transform: translateX(-1500px);
     }
     // 50%{
         // right: 500px;
@@ -171,7 +196,7 @@ margin-left: 1190px;
 
 @keyframes carfour{
     0%{
-        transform: translateX(-900px);
+        transform: translateX(-1500px);
     }
     // 50%{
         // right: 500px;
@@ -184,11 +209,12 @@ margin-left: 1190px;
 
 .woman{
     position: absolute;
-    margin-left: 172px;
+    margin-left: -600px;
     margin-top: -380px;
     width: 90px;
     height: 260px;
     animation-name: woman;
+    z-index: 4;
     // margin-bottom: 200px;
 }
 
@@ -206,27 +232,54 @@ margin-left: 1190px;
 .cases{
     position: absolute;
     margin-top: -220px;
-    margin-left: 172px;
+    margin-left: -600px;
+    z-index: 4;
 }
 
 .man{
     position: absolute;
-    margin-left: 288px;
+    margin-left: -500px;
     margin-top: -460px;
     width: 190px;
     height: 380px;
+    z-index: 4;
 }
 
 .lantern1{
-    width: 250px;
-    height: 550px;
-    position: absolute;
-    margin-top: -685px;
-    margin-left: 900px;
+    // width: 250px;
+    // height: 550px;
+    // position: absolute;
+    // margin-top: -685px;
+    // margin-left: 900px;
+    position: absolute; 
+  left: 69.5%; 
+  top: 19.6%; 
+  width: 12.9%; 
+  height: 67.5%; 
+  z-index: 9; 
 }
 
 .hand{
     position: absolute;
-    // margin-top: -148px;
-    // margin-left: 5px;
+    margin-top: -454px;
+    margin-left: -502px;
+    z-index: 4;
+    animation: hand;
+}
+
+// @keyframes hand {
+//     0%{
+//         transform: translateX(-900px);
+//         rotate: 1;
+//     }
+//     100%{
+//         transform: translateX(2000px);
+//     }
+// }
+
+.hand1 {
+    position: absolute;
+    margin-top: -470px;
+    margin-left: -443px;
+    z-index: 4;
 }
